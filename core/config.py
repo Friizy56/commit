@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     
     # LLM settings
-    LLM_MODEL: str = "llama2"
+    LLM_MODEL: str = "llama3.1:8b"
     LLM_API_URL: str = "http://localhost:11434"
     
     class Config:
