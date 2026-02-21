@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{% block title %}CommitIQ{% endblock %}</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Login Modal -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <button class="close-modal" onclick="closeModal()">×</button>
+
+    <div class="modal-title">Welcome back</div>
+    <div class="modal-sub">Log in to your CommitIQ workspace</div>
+
+    <div class="field">
+      <label>Email</label>
+      <input id="loginEmail" type="email">
+    </div>
+
+    <div class="field">
+      <label>Password</label>
+      <input id="loginPassword" type="password">
+    </div>
+
+    <button class="btn-full" onclick="login()">Sign In →</button>
+  </div>
+</div>
+
+<nav>
+  <div class="logo">Commit<span>IQ</span></div>
+
+  <ul class="nav-links" id="landing-links">
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Integrations</a></li>
+    <li><a href="#">Pricing</a></li>
+  </ul>
+
+  <div class="nav-cta" id="landing-cta">
+    <button class="btn-ghost" onclick="openModal()">Log in</button>
+    <button class="btn-primary" onclick="openModal()">Start free →</button>
+  </div>
+
+  <div class="nav-cta" id="dash-cta" style="display:none">
+    <button class="btn-ghost" onclick="goToLanding()">← Back</button>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>

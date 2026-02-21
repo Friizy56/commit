@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<section id="dashboard" class="active">
+
+<div class="dash-layout">
+
+<aside class="sidebar">
+  <div class="sidebar-item active-item">Overdue</div>
+  <div class="sidebar-item">Due Today</div>
+  <div class="sidebar-item">Upcoming</div>
+</aside>
+
+<main class="main">
+
+<div class="dash-header">
+  <div>
+    <div class="dash-title">Good afternoon 👋</div>
+    <div class="dash-sub">3 overdue commitments</div>
+  </div>
+</div>
+
+<div class="kpi-row">
+  <div class="kpi-card urgent">
+    <div class="kpi-label">Overdue</div>
+    <div class="kpi-value red">3</div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-label">Due Today</div>
+    <div class="kpi-value yellow">2</div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-label">Done</div>
+    <div class="kpi-value green">11</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Active Commitments
+  </div>
+
+  <div class="commitment-list" id="commitmentList">
+    <!-- populated from FastAPI -->
+  </div>
+</div>
+
+</main>
+</div>
+</section>
+
+{% endblock %}

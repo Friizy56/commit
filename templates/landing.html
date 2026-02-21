@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}CommitIQ — Your Business Never Forgets{% endblock %}
+
+{% block content %}
+
+<section id="landing" class="active">
+
+<div class="hero">
+  <div class="hero-eyebrow">AI-Powered Business Memory</div>
+
+  <h1>Your business<br><span class="accent">never</span> forgets<br><span class="outline">again.</span></h1>
+
+  <p class="hero-sub">
+    CommitIQ listens to email + Telegram, extracts commitments, and pushes you to act.
+  </p>
+
+  <div class="hero-actions">
+    <button class="btn-hero" onclick="openModal()">Get started free →</button>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">₹2.4L</div>
+    <div class="stat-label">Avg recovered</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">97%</div>
+    <div class="stat-label">Detection</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">3min</div>
+    <div class="stat-label">Setup</div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="cta-title">Stop losing money to forgetfulness</div>
+  <button class="btn-hero" onclick="openModal()">Start trial →</button>
+</div>
+
+</section>
+
+{% endblock %}

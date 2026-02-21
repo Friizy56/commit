@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "postgresql://user:password@localhost:5432/commit_ai"
     
     # App settings
-    APP_NAME: str = "Commitment AI"
+    APP_NAME: str = "Commit AI"
     DEBUG: bool = True
     
     # Security settings
